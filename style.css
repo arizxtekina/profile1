@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f4f4f4;
+}
+
+/* HEADER */
+header {
+    background: black;
+    padding: 15px 40px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+}
+
+nav a {
+    color: white;
+    margin: 0 12px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #f5b300;
+}
+
+.hire {
+    background: #f5b300;
+    padding: 8px 15px;
+    border-radius: 20px;
+    color: black;
+}
+
+/* ABOUT */
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+}
+
+.text h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.text p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.image img {
+    width: 260px;
+    border-radius: 50%;
+    border: 5px solid #f5b300;
+}
+
+/* SKILLS */
+.skills-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background: #f5b300;
+}
+
+.skills h2 {
+    font-size: 30px;
+}
+
+.skills ul li {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+/* CONTACT */
+.contact {
+    background: black;
+    padding: 20px;
+    border-radius: 20px;
+    width: 300px;
+}
+
+.contact h3 {
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+}
+
+.contact textarea {
+    height: 80px;
+}
+
+.contact button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    background: #f5b300;
+    border: none;
+    cursor: pointer;
+}
+
+/* PROJECTS */
+.projects {
+    text-align: center;
+    padding: 50px;
+}
+
+.grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.card {
+    width: 250px;
+    margin: 15px;
+    transition: 0.3s;
+}
+
+.card img {
+    width: 100%;
+    border: 2px solid black;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.view {
+    margin-top: 20px;
+    padding: 10px 30px;
+    border-radius: 20px;
+    background: #f5b300;
+    border: none;
+    cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.icons img {
+    width: 40px;
+    margin: 10px;
+    transition: 0.3s;
+}
+
+.icons img:hover {
+    transform: scale(1.2);
+}
+
+/* RESPONSIVE */
+@media(max-width: 900px) {
+
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .image {
+        margin-top: 20px;
+    }
+
+    .skills-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact {
+        margin-top: 20px;
+    }
+
+    .grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
